@@ -1,9 +1,37 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>login</ion-title>
+    <ion-title>Welcome, please login!</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <form>
+    <ion-grid>
+      <ion-row >
+        <ion-col>
+        </ion-col>
+        <ion-col class="ion-text-center">
+          <img class="ion-float-center" class="image" style="width:100px;" src="..\..\assets\logo_devskill@2x.png">
+          <br><br>
+          <h6>Benvenuti!</h6>
+          <br>
+          <ion-item>
+            <ion-label position="floating" for="uname">Username</ion-label>
+            <ion-input autofocus id="uname" name="uname"></ion-input>
+            <ion-icon slot="end" name="mail-sharp"></ion-icon>
+          </ion-item>
+          <br>
+          <ion-item>
+            <ion-label position="floating" for="psw">Password</ion-label>
+            <ion-input type="password" id="psw" name="psw"></ion-input>
+            <ion-icon slot="end" name="lock-open"></ion-icon>
+          </ion-item>
+          <br>
+          <ion-button  class="ion-float-right" expand="block">LOGIN</ion-button>
+        </ion-col>
+        <ion-col>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</form>
 </ion-content>
