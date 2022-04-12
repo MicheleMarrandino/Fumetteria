@@ -1,0 +1,7 @@
+{
+  "name": "FumetteriaSellMe",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
