@@ -1,33 +1,33 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
     <ion-title>Welcome, please login!</ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
 <ion-content>
   <form>
     <ion-grid>
-      <ion-row >
+      <ion-row>
         <ion-col>
         </ion-col>
-        <ion-col class="ion-text-center">
-          <img class="ion-float-center" class="image" style="width:100px;" src="..\..\assets\logo_devskill@3x.png">
+        <ion-col class="ion-text-center col">
+          <img class="ion-float-center" class="image" style="width:auto;" src="..\..\assets\logo_devskill@2x.png">
           <br><br>
-          <h6>Benvenuti!</h6>
+          <h6 style="font-size: 1.4rem;margin-bottom: 2.5rem">Benvenuti!</h6>
           <br>
           <ion-item>
-            <ion-label position="floating" for="uname">Username</ion-label>
-            <ion-input autofocus id="uname" name="uname"></ion-input>
+            <ion-label style="font-size: 1.2rem" position="floating" for="username">Username</ion-label>
+            <ion-input autofocus id="username" name="username" [(ngModel)]="username"></ion-input>
             <ion-icon slot="end" name="mail-sharp"></ion-icon>
           </ion-item>
           <br>
           <ion-item>
-            <ion-label position="floating" for="psw">Password</ion-label>
-            <ion-input type="password" id="psw" name="psw"></ion-input>
+            <ion-label style="font-size: 1.2rem" position="floating" for="psw">Password</ion-label>
+            <ion-input type="password" id="psw" name="psw" [(ngModel)]="psw"></ion-input>
             <ion-icon slot="end" name="lock-open"></ion-icon>
           </ion-item>
           <br>
-          <ion-button  class="ion-float-right" expand="block">LOGIN</ion-button>
+          <ion-button class="ion-float-right" expand="block" (click)="login()">LOGIN</ion-button>
         </ion-col>
         <ion-col>
         </ion-col>
