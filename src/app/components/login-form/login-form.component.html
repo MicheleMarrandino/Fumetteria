@@ -1,0 +1,32 @@
+<form action="" [formGroup]="inputForm">
+  <ion-item>
+    <ion-label position="floating" for="username">Username</ion-label>
+    <ion-input
+      id="username"
+      name="username"
+      formControlName="username"
+    ></ion-input>
+    <ion-icon [ngClass]="showIcon('username') ? 'valid' : 'invalid'" slot="end" name="person-sharp"></ion-icon>
+  </ion-item>
+  <app-label-err [errorMessage]="showError('username')" ></app-label-err>
+  <br />
+  <ion-item>
+    <ion-label position="floating" for="username">Password</ion-label>
+    <ion-input
+      id="password"
+      name="password"
+      formControlName="password"
+      [type]="eye ? 'text' : 'password'"
+    ></ion-input>
+    <button ion-button icon-only clear item-right (click)="toggleEye()">
+    <ion-icon
+      slot="end"
+      [ngClass]="showIcon('password') ? 'valid' : 'invalid'"
+      [name]="eye ? 'eye-outline' : 'eye-off-outline'"
+    ></ion-icon>
+  </button>
+  </ion-item>
+  <app-label-err [errorMessage]="showError('password')"></app-label-err>
+  <br/>
+  <ion-button [disabled]="disableButton()" (click)="onClick()">LOGIN</ion-button>
+</form>

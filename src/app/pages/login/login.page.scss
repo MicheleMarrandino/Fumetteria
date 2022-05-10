@@ -1,8 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&display=swap');
+
+ion-content{
+    --background: #171123;
+}
+
+
+.image{
+    max-width: 200px;
+    margin-bottom: 1.3rem;
+}
+
 .col{
-align-content: center;
-justify-content: center;
-align-items: center;
-justify-items: center;
-margin-top: 10%;
-margin-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin-top: 2%;
+}
+
+ion-card{
+    max-width: fit-content;
+    height: auto;
+    padding: 0.8rem 0.8rem;
+}
+
+.subtitle{
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 0.1rem;
+}
+
+.subtitlee{
+    font-size: 1rem;
+    white-space: pre;
+}
+
+.welcome{
+    color: #7559f4;
+    font-size: 2em;
+    margin-bottom: 0.1rem;
+}
+
+ion-icon{
+    margin-top: 0.9rem;
+}
+
+
+.button{
+    --background:#7559f4;
+    --color: #e0d743;
+    --box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+.button:active{
+    --color: #e0d722;
+    --background: #3f1ae4;
+}
+
+*{
+    font-family: 'Zen Maru Gothic', sans-serif;
 }
